@@ -24,7 +24,7 @@ def rename(source_path, name):
 def run():
     name=input('Como os arquivos serão renomeados? ')
     if name == '':
-        name = 'h_MeFA_reanmed_image'
+        name = 'h_MeFA_renamed_image'
     source_path = easygui.diropenbox()
     rename(source_path, name)
 
