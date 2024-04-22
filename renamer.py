@@ -11,8 +11,6 @@ def rename(source_path, name):
     output_path = os.path.join(os.path.expanduser("~"), f"Documents\\MeFA\\Renamed Files")
     if not os.path.exists(output_path):
         os.makedirs(output_path)
-        shell = True
-
 
     for files in os.listdir(source_path):
         extension = os.path.splitext(files)[1]
