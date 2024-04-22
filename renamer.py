@@ -1,7 +1,17 @@
 import os
+import easygui
 import random
 
 
+def rename(folder_input):
+    local = folder_input
 
-while True:
-    print(1)
+
+
+
+
+
+
+
+folder_input = easygui.diropenbox()
+rename(folder_input)
