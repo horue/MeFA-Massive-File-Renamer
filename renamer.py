@@ -19,7 +19,7 @@ def rename(folder_input):
 
 
 
-def main():
+def run():
     input('Como os arquivos serão renomeados? ')
     folder_input = easygui.diropenbox()
     rename(folder_input)
