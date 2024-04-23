@@ -16,10 +16,9 @@ def rename_c(source_path, name):
 
     for files in os.listdir(source_path):
         extension = os.path.splitext(files)[1]
-        n2=str(random.randint(1000, 9999))
-        n3=random.choice(alphabet)
-        n4=random.choice(names)
-        shutil.move(os.path.join(source_path, files), os.path.join(output_path, n3 + n1 + '_' + n2 + '_' + name + '_' + n3 + extension))
+        for i in range:
+            i = int(files=1)
+            shutil.move(os.path.join(source_path, files), os.path.join(output_path, name + (i) + extension))
 
 
 def rename(source_path, name):
