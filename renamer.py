@@ -1,6 +1,6 @@
 import os
 import easygui
-import random
+import random   
 import shutil
 
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p','q','r','s','t','u','v','w','x','y','z']
@@ -14,11 +14,11 @@ def rename_c(source_path, name):
     if not os.path.exists(output_path):
         os.makedirs(output_path)
 
+    number = 1
     for files in os.listdir(source_path):
         extension = os.path.splitext(files)[1]
-        for i in range:
-            i = int(files=1)
-            shutil.move(os.path.join(source_path, files), os.path.join(output_path, name + (i) + extension))
+        shutil.move(os.path.join(source_path, files), os.path.join(output_path, name + '_' + str(number) + extension))
+        number += 1
 
 
 def rename(source_path, name):
