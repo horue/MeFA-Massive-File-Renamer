@@ -8,9 +8,6 @@ names = ['ba', 'xe', 'za', 'ux', 'pd', 'le', 'rx']
 
 
 def rename_c(source_path, name):
-
-
-    number_f = 1
     output_path = os.path.join(os.path.expanduser("~"), f"Documents\\MeFA\\Renamed Files\\{name}")
     if not os.path.exists(output_path):
         os.makedirs(output_path)
