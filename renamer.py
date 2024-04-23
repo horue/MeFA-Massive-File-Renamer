@@ -9,15 +9,17 @@ names = ['ba', 'xe', 'za', 'ux', 'pd', 'le', 'rx']
 
 def rename_c(source_path, name):
 
+
+    number_f = 1
     output_path = os.path.join(os.path.expanduser("~"), f"Documents\\MeFA\\Renamed Files\\{name}")
     if not os.path.exists(output_path):
         os.makedirs(output_path)
 
-    number = 1
+    number_n = 1
     for files in os.listdir(source_path):
         extension = os.path.splitext(files)[1]
-        shutil.move(os.path.join(source_path, files), os.path.join(output_path, name + '_' + str(number) + extension))
-        number += 1
+        shutil.move(os.path.join(source_path, files), os.path.join(output_path, name + '_' + str(number_n) + extension))
+        number_n += 1
 
 
 def rename(source_path, name):
