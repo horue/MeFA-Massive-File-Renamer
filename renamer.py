@@ -8,7 +8,6 @@ names = ['ba', 'xe', 'za', 'ux', 'pd', 'le', 'rx']
 
 
 def rename_c(source_path, name):
-    n1 = str(random.randint(0,9))
 
     output_path = os.path.join(os.path.expanduser("~"), f"Documents\\MeFA\\Renamed Files\\{name}")
     if not os.path.exists(output_path):
