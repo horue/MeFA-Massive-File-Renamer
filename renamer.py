@@ -43,5 +43,3 @@ def run():
     else:
         source_path = easygui.diropenbox()
         rename_c(source_path, name)
-
-run()
