@@ -7,6 +7,23 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 names = ['ba', 'xe', 'za', 'ux', 'pd', 'le', 'rx']
 
 
+def manual():
+    number_n = 1
+    source_path = easygui.diropenbox()
+    output_path = os.path.join(os.path.expanduser("~"), f"Documents\\MeFA\\Renamed Files\\Manual Renamed")
+    if not os.path.exists(output_path):
+        os.makedirs(output_path)
+
+    for files in source_path:
+       print(f'Enter new name for {files}.')
+       name=input(f'> ')
+       extension = os.path.splitext(files)[1]
+       shutil.move(os.path.join(source_path, files), os.path.join(output_path, name + '_' + str(number_n) + extension))
+       number_n += 1
+
+
+
+
 def rename_c(source_path, name):
     output_path = os.path.join(os.path.expanduser("~"), f"Documents\\MeFA\\Renamed Files\\{name}")
     if not os.path.exists(output_path):
