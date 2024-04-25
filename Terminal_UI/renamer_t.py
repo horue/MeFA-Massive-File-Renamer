@@ -15,11 +15,11 @@ def manual():
         os.makedirs(output_path)
 
     for files in source_path:
-       print(f'Enter new name for {files}.')
-       name=input(f'> ')
-       extension = os.path.splitext(files)[1]
-       shutil.move(os.path.join(source_path, files), os.path.join(output_path, name + '_' + str(number_n) + extension))
-       number_n += 1
+        extension = os.path.splitext(files)[1]
+        print(f'Enter new name:')
+        name=input(f'> ')
+        shutil.move(os.path.join(source_path, files), os.path.join(output_path, name + '_' + str(number_n) + extension))
+        number_n += 1
 
 
 
