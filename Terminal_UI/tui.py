@@ -3,15 +3,24 @@ import easygui
 import random   
 import shutil
 import sys
+from renamer import run
+
+
+
+
 
 def auto_rename():
-    pass
+    os.system('cls')
+    print("#"*len('# MeFA - Massive File Renamer #'))
+    print('# MeFA - Massive File Renamer #')
+    print("#"*len('# MeFA - Massive File Renamer #'))
+    run()
 
 def manual_rename():
-    pass
+    print(1)
 
 def help():
-    pass
+    print(1)
 
 def principal_menu():
     option=input("> ")
@@ -44,4 +53,5 @@ def principal():
     principal_menu()
 
 
-principal()
+while True:
+    principal()
