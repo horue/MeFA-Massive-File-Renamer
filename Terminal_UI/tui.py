@@ -3,7 +3,7 @@ import easygui
 import random   
 import shutil
 import sys
-from renamer import run
+from renamer_t import run, manual
 
 
 
@@ -17,7 +17,7 @@ def auto_rename():
     run()
 
 def manual_rename():
-    print(1)
+    manual()
 
 def help():
     print(1)
