@@ -17,6 +17,8 @@ def rename_c(source_path, name):
         extension = os.path.splitext(files)[1]
         shutil.move(os.path.join(source_path, files), os.path.join(output_path, name + '_' + str(number_n) + extension))
         number_n += 1
+    
+    os.startfile(output_path)
 
 
 def rename(source_path, name):
@@ -32,6 +34,7 @@ def rename(source_path, name):
         n3=random.choice(alphabet)
         n4=random.choice(names)
         shutil.move(os.path.join(source_path, files), os.path.join(output_path, n3 + n1 + '_' + n2 + '_' + name + '_' + n3 + extension))
+    os.startfile(output_path)
 
 
 def run():
