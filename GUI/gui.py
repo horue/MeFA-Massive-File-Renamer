@@ -2,6 +2,10 @@ import customtkinter as ct
 
 
 def main(root):
+    l1=ct.CTkLabel(root, text='MeFA - Massive File Renamer')
+    l1.pack(pady=20)
+
+
     b1=ct.CTkButton(root, text='Select folder')
     b1.pack(pady=20)
     print('')
