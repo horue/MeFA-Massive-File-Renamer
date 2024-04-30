@@ -1,4 +1,5 @@
 import customtkinter as ct
+import easygui
 
 
 def main(root):
