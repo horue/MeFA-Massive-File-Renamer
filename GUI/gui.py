@@ -2,6 +2,8 @@ import customtkinter as ct
 
 
 def main(root):
+    b1=ct.CTkButton(root, text='Select folder')
+    b1.pack(pady=20)
     print('')
 
 def root():
