@@ -1,13 +1,13 @@
 import customtkinter as ct
 
 
-def main():
+def main(root):
     print('')
 
 def root():
     root = ct.CTk()
-    root.geometry("400x350")
-    root.title("Seiri - Desktop Organizer")
+    root.geometry("500x350")
+    root.title("MeFA - Massive File Renamer")
 
     
     main(root)
