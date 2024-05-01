@@ -11,6 +11,8 @@ def main(root):
     l1=ct.CTkLabel(root, text='MeFA - Massive File Renamer')
     l1.pack(pady=20)
 
+    l2=ct.CTkLabel(root, text='Selected Folder: None')
+    l2.pack()
 
     b1=ct.CTkButton(root, text='Select folder', command=lambda:select())
     b1.pack(pady=20)
