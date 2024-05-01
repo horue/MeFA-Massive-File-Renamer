@@ -1,5 +1,10 @@
 import customtkinter as ct
-import easygui
+import easygui as eg
+
+
+def select():
+    global in_path
+    in_path = eg.diropenbox()
 
 
 def main(root):
@@ -7,9 +12,8 @@ def main(root):
     l1.pack(pady=20)
 
 
-    b1=ct.CTkButton(root, text='Select folder')
+    b1=ct.CTkButton(root, text='Select folder', command=lambda:select())
     b1.pack(pady=20)
-    print('')
 
 def root():
     root = ct.CTk()
