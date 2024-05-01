@@ -2,10 +2,10 @@ import customtkinter as ct
 import easygui as eg
 
 
-def select():
+def select(l2):
     global in_path
     in_path = eg.diropenbox()
-
+    l2.configure(text=in_path)
 
 def main(root):
     l1=ct.CTkLabel(root, text='MeFA - Massive File Renamer')
@@ -14,7 +14,7 @@ def main(root):
     l2=ct.CTkLabel(root, text='Selected Folder: None')
     l2.pack()
 
-    b1=ct.CTkButton(root, text='Select folder', command=lambda:select())
+    b1=ct.CTkButton(root, text='Select folder', command=lambda:select(l2))
     b1.pack(pady=20)
 
 def root():
