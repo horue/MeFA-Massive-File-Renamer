@@ -1,6 +1,6 @@
 import customtkinter as ct
 import easygui as eg
-
+from renamer_ui import *
 
 def select(l2):
     global in_path
@@ -19,6 +19,9 @@ def main(root):
 
     b1=ct.CTkButton(root, text='Select folder', command=lambda:select(l2))
     b1.pack(pady=20)
+
+    b2=ct.CTkButton(root, text='Rename Files', command=lambda:run(name=e1.get(), source_path=in_path))
+    b2.pack()
 
 def root():
     root = ct.CTk()
